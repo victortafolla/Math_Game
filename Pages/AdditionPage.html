@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width" />
+        <link rel="stylesheet" type="text/css" href="../CSS/AdditionPage.css">
+        <title>Addition</title>
+    </head>
+    <body onload="changenumb();">
+       <nav>
+           <ul>
+               <li><a href="../index.html">HOME</a></li>
+           </ul>
+       </nav>
+        <div class="numbContainer">
+            <img id="numb1" src="../Images/Numb_1.jpg">
+            <p id="addIcon">+</p>
+            <img id="numb2" src="../Images/Numb_1.jpg">
+            <hr>
+            <input id="txt_answer" name="answer" type="text" autocomplete="off">
+            <input id="btn_Next" type="button" value="Next" name="next" onclick="changenumb();">
+            <input id="btn_Show" type="button" value="show" name="show" onclick="shownumb();">
+            <input id="btn_Check" type="button" value="check" name="check" onclick="checknumb();">
+        </div>
+        <div class="iceCream">
+           <div id="border">
+               
+           </div>
+            <img id="iceCreamImage" src="../Images/IceCream_01.png">
+        </div>
+
+        <script type="text/jscript" src="../Scripts/Math.js"></script>
+    </body>
+</html>

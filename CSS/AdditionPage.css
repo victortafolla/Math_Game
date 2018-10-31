@@ -1,0 +1,205 @@
+/*---------------------------------------variables*/
+:root
+{
+    --g:9;
+}
+/*---------------------------------------variables*/
+/*---------------------------------------This is universal settings*/
+* 
+{
+    margin: 0;
+    padding: 0;
+}
+img
+{
+    width: 10em;
+    height: 10em;
+}
+/*---------------------------------------This is universal settings*/
+/*----------------------------This is the nav*/
+nav 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: sticky;
+    font-size: 2em;
+    font-family: Verdana;
+    background: rgba(105, 198, 176, 0.51);
+    top: 0;
+    height: 50px;
+    border-bottom: 2px solid rgba(150, 29, 150, 0.73); 
+    box-shadow: 2px 3px 4px black;
+    z-index: 2;
+}
+ul
+{
+    list-style-type: none;
+    margin: 4px 4px;
+}
+li
+{
+    padding: 0 3px;
+}
+a
+{
+    border: 2px solid;
+    text-decoration: none;
+    background: white;
+}
+a:hover
+{
+    border: 2px solid white;
+    text-decoration: none;
+    background: rgba(150, 29, 150, 0.73);
+    color: white;
+    box-shadow: 1px 3px 2px gray;
+}
+
+/*----------------------------This is the nav*/
+/*------------This is the main container of the numbers, answer, buttons*/
+.numbContainer
+{
+    display: grid;
+    display: inline-grid;
+    justify-content: center;
+    grid-template-columns:repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+}
+#numb1 
+{
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+#numb2 
+{
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+#addIcon 
+{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    font-size: 6em;
+    align-self: center;
+}
+hr
+{
+    grid-column-start: 3;
+    grid-row-start: 3;
+    height: 10px;
+    width: 150%;
+    background-color: black;
+    align-self: center;
+}
+input
+{
+    font-size: 120px;
+    width: 150px;
+    text-align: center;
+    grid-column-start: 3;
+}
+/*------------This is the main container of the numbers, answer, buttons*/
+/*-----------------------------------------------This is for the buttons*/
+#btn_Next 
+{
+    width: 4em;
+    height: 2em;
+    font-size: 24px;
+    margin: .5em;
+    background-color: white;
+}
+#btn_Next:hover 
+{
+    width: 4em;
+    height: 2em;
+    font-size: 24px;
+    margin: .5em;
+    color: skyblue;
+    background-color: white;
+    box-shadow: 2px 2px 6px skyblue;
+}
+#btn_Show 
+{
+    width: 4em;
+    height: 2em;
+    font-size: 24px;
+    margin: .5em;
+    background-color: white;
+}
+#btn_Show:hover
+{
+    width: 4em;
+    height: 2em;
+    font-size: 24px;
+    margin: .5em;
+    background-color: white;
+    box-shadow: 2px 2px 6px purple;
+    color: purple;
+}
+#btn_Check 
+{
+    width: 4em;
+    height: 2em;
+    font-size: 24px;
+    margin: .5em;
+    background-color: white;
+}
+#btn_Check:hover
+{
+    width: 4em;
+    height: 2em;
+    font-size: 24px;
+    margin: .5em;
+    color: Green;
+    background-color: white;
+    box-shadow: 2px 2px 6px green;
+}
+/*-----------------------------------------------This is for the buttons*/
+/*-----------------------------------------------This is for icecreame image*/
+.iceCream
+{
+    position: absolute;
+    display: grid;
+    display: inline-grid;
+    margin-left: 25%;
+    grid-template-columns:repeat(1, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+}
+#border
+{
+    border-bottom: 10px solid green;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+#iceCreamImage
+{
+    grid-column-start: 1;
+    grid-row-start: var(--g);
+    width: 5em;
+    height: 5em;
+}
+/*-----------------------------------------------This is for icecreame image*/
+/*-----------------------------------------------This is for javascript animations*/
+.wrong
+{
+    animation: wrong 1s ease-in-out;
+}
+
+@keyframes wrong 
+{
+    from {background: red;}   
+    to {background: none;}   
+}
+
+.correct
+{
+    animation: correct 1s ease-in-out;
+}
+
+@keyframes correct 
+{
+    from {background: green;}   
+    to {background: none;}   
+}
+/*-----------------------------------------------This is for javascript animations*/  
